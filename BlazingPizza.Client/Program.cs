@@ -12,4 +12,6 @@ builder.Services.AddScoped(sp => new HttpClient {
 
 builder.Services.AddScoped<OrderState>();
 
+builder.Services.AddApiAuthorization();
+
 await builder.Build().RunAsync();
